@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 60CE7250
+P 4910 4170
+F 0 "Q1" H 5101 4216 50  0000 L CNN
+F 1 "BC547" H 5101 4125 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5110 4095 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4910 4170 50  0001 L CNN
+	1    4910 4170
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D2
+U 1 1 60CE7A71
+P 5010 3640
+F 0 "D2" V 4964 3719 50  0000 L CNN
+F 1 "1N4001" V 5055 3719 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5010 3465 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5010 3640 50  0001 C CNN
+	1    5010 3640
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60CEAE37
+P 4400 4170
+F 0 "R8" V 4193 4170 50  0000 C CNN
+F 1 "10K" V 4284 4170 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4330 4170 50  0001 C CNN
+F 3 "~" H 4400 4170 50  0001 C CNN
+	1    4400 4170
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5010 3350 5010 3490
+Wire Wire Line
+	5010 3790 5010 3950
+Wire Wire Line
+	5630 3950 5010 3950
+Connection ~ 5010 3950
+Wire Wire Line
+	5010 3950 5010 3970
+Wire Wire Line
+	4710 4170 4550 4170
+$Comp
+L power:+5V #PWR0119
+U 1 1 60CEDDEC
+P 5010 3350
+F 0 "#PWR0119" H 5010 3200 50  0001 C CNN
+F 1 "+5V" H 5025 3523 50  0000 C CNN
+F 2 "" H 5010 3350 50  0001 C CNN
+F 3 "" H 5010 3350 50  0001 C CNN
+	1    5010 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5010 3350
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 60CEE966
+P 6600 3700
+F 0 "J5" H 6572 3582 50  0000 R CNN
+F 1 "Pumpe" H 6572 3673 50  0000 R CNN
+F 2 "TerminalBlock:ScrewTerminal_1x2_P5.00" H 6600 3700 50  0001 C CNN
+F 3 "~" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 60CEFA3A
+P 6400 3830
+F 0 "#PWR0120" H 6400 3580 50  0001 C CNN
+F 1 "GND" H 6405 3657 50  0000 C CNN
+F 2 "" H 6400 3830 50  0001 C CNN
+F 3 "" H 6400 3830 50  0001 C CNN
+	1    6400 3830
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 4170 0    50   Input ~ 0
+ESP.12-Pumpe
+Wire Wire Line
+	5010 3350 5640 3350
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K1
+U 1 1 60D1C9F4
+P 5940 3610
+F 0 "K1" H 5940 3977 50  0000 C CNN
+F 1 "SRD-05VDC-SL-C" H 5940 3886 50  0000 C CNN
+F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 5940 3610 50  0001 L BNN
+F 3 "" H 5940 3610 50  0001 L BNN
+F 4 "IPC-7251" H 5940 3610 50  0001 L BNN "STANDARD"
+F 5 "SONGLE RELAY" H 5940 3610 50  0001 L BNN "MANUFACTURER"
+	1    5940 3610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5630 3950 5630 3810
+Wire Wire Line
+	5630 3810 5640 3810
+Wire Wire Line
+	5640 3510 5640 3350
+Connection ~ 5640 3350
+Wire Wire Line
+	6240 3350 6240 3510
+Wire Wire Line
+	5640 3350 6240 3350
+Wire Wire Line
+	6400 3600 6240 3600
+Wire Wire Line
+	6240 3600 6240 3610
+$Comp
+L Diode:1N4001 D3
+U 1 1 60D25631
+P 7010 3670
+F 0 "D3" V 6964 3749 50  0000 L CNN
+F 1 "1N4001" V 7055 3749 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7010 3495 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7010 3670 50  0001 C CNN
+	1    7010 3670
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3600 6400 3520
+Wire Wire Line
+	6400 3520 7010 3520
+Connection ~ 6400 3600
+Wire Wire Line
+	6400 3700 6400 3820
+Wire Wire Line
+	7010 3820 6400 3820
+Connection ~ 6400 3820
+Wire Wire Line
+	6400 3820 6400 3830
+$Comp
+L power:GND #PWR0123
+U 1 1 60D330E7
+P 5010 4370
+F 0 "#PWR0123" H 5010 4120 50  0001 C CNN
+F 1 "GND" H 5015 4197 50  0000 C CNN
+F 2 "" H 5010 4370 50  0001 C CNN
+F 3 "" H 5010 4370 50  0001 C CNN
+	1    5010 4370
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
