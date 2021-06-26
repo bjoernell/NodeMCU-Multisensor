@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -176,5 +176,15 @@ S 3720 6130 1060 490
 U 60D4423B
 F0 "Partikelsen" 50
 F1 "Partikelsen.sch" 50
+$EndSheet
+Text GLabel 4050 2850 0    50   Input ~ 0
+ESP.13-DigGas
+Text GLabel 4050 2050 0    50   Input ~ 0
+ESP.32-AnaGas
+$Sheet
+S 1310 6820 1090 520 
+U 60D5FAAB
+F0 "MountingHoles" 50
+F1 "MountingHoles.sch" 50
 $EndSheet
 $EndSCHEMATC

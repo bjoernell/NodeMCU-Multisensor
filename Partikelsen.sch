@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 13 14
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,97 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector:Conn_01x04_Male J8
+U 1 1 60D50088
+P 5540 3830
+F 0 "J8" H 5648 4111 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5648 4020 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5540 3830 50  0001 C CNN
+F 3 "~" H 5540 3830 50  0001 C CNN
+	1    5540 3830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5740 4030 6400 4030
+$Comp
+L power:GND #PWR0129
+U 1 1 60D51D15
+P 6570 4030
+F 0 "#PWR0129" H 6570 3780 50  0001 C CNN
+F 1 "GND" H 6575 3857 50  0000 C CNN
+F 2 "" H 6570 4030 50  0001 C CNN
+F 3 "" H 6570 4030 50  0001 C CNN
+	1    6570 4030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6570 3930 6570 4030
+Wire Wire Line
+	5740 3930 6570 3930
+Wire Wire Line
+	6400 4030 6400 3850
+Wire Wire Line
+	6400 3850 6570 3850
+$Comp
+L power:+5V #PWR0130
+U 1 1 60D530B6
+P 6570 3850
+F 0 "#PWR0130" H 6570 3700 50  0001 C CNN
+F 1 "+5V" H 6585 4023 50  0000 C CNN
+F 2 "" H 6570 3850 50  0001 C CNN
+F 3 "" H 6570 3850 50  0001 C CNN
+	1    6570 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5740 3830 6350 3830
+Wire Wire Line
+	6350 3830 6350 3530
+Wire Wire Line
+	6350 3530 6810 3530
+$Comp
+L Device:R R10
+U 1 1 60D53CC1
+P 6960 3530
+F 0 "R10" V 6753 3530 50  0000 C CNN
+F 1 "3400" V 6844 3530 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6890 3530 50  0001 C CNN
+F 3 "~" H 6960 3530 50  0001 C CNN
+	1    6960 3530
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60D5438E
+P 7260 3530
+F 0 "R11" V 7053 3530 50  0000 C CNN
+F 1 "5100" V 7144 3530 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7190 3530 50  0001 C CNN
+F 3 "~" H 7260 3530 50  0001 C CNN
+	1    7260 3530
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7110 3530 7110 3250
+Connection ~ 7110 3530
+$Comp
+L power:GND #PWR0131
+U 1 1 60D55E2F
+P 7410 3530
+F 0 "#PWR0131" H 7410 3280 50  0001 C CNN
+F 1 "GND" H 7415 3357 50  0000 C CNN
+F 2 "" H 7410 3530 50  0001 C CNN
+F 3 "" H 7410 3530 50  0001 C CNN
+	1    7410 3530
+	1    0    0    -1  
+$EndComp
+Text GLabel 7110 3250 2    50   Input ~ 0
+ESP.13-DigGas
+Wire Wire Line
+	5740 3730 6240 3730
+Wire Wire Line
+	6240 3730 6240 3250
+Text GLabel 6240 3250 2    50   Input ~ 0
+ESP.32-AnaGas
 $EndSCHEMATC
