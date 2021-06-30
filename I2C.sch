@@ -23,7 +23,7 @@ U 1 1 60D3C24A
 P 5000 3750
 F 0 "J7" H 5108 4131 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 5108 4040 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5000 3750 50  0001 C CNN
+F 2 "TerminalBlock:ScrewTerminal_1x5_P5.00" H 5000 3750 50  0001 C CNN
 F 3 "~" H 5000 3750 50  0001 C CNN
 	1    5000 3750
 	1    0    0    -1  
